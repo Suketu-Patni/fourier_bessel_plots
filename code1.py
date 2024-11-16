@@ -6,7 +6,7 @@ from functools import lru_cache
 p = 0
 q = 1
 p_prime_range = range(1, 11)
-epsilon_by_r = 0.01 # change this value to get the different plots
+epsilon_by_r = 0.12 # change this value to get the different plots
 u_p_q = ss.jn_zeros(p, q)[-1]
 lower_bound = ss.jv(p + 1, u_p_q)**2 / 4 - epsilon_by_r**2 / 2
 
